@@ -1,0 +1,557 @@
+<style>
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'Open Sans', sans-serif;
+}
+
+#date {
+font-weight: bold;
+font-style: italic;
+}
+
+section {
+background: #fff;
+}
+
+.parallax {
+/* The image used */
+background-image: url("https://images.angelpub.com/2017/17/43686/lpbackground.png");
+/* Set a specific height */
+height: auto;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container {
+max-width: 880px;
+width: 100%;
+margin: 0 auto;
+box-shadow: 0 8px 8px 2px rgba(0,0,0,.4);
+padding: 0px 0px;
+}
+
+.logo {
+max-width: 100%;
+}
+
+header {
+background-color: #2b498d;
+text-align: center;
+max-width: 100%;
+max-height: 100px;
+background-image: linear-gradient(180deg,rgba(10,52,111,1.00) 0%,rgba(41,85,151,1.00) 100%);
+}
+
+header img {
+max-width: 100%;
+}
+
+.header-container {
+display: flex;
+margin: 0 auto;
+padding: 0 15px;
+max-width: 100%;
+max-height: 100px;
+}
+
+.branding {
+display: inline-block;
+padding-left: 15px;
+padding-right: 15px;
+width: 50%;
+min-width: 240px;
+max-height: 100px;
+box-sizing: border-box;
+}
+
+.explain {
+display: inline-block;
+white-space: nowrap;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
+width: 50%;
+max-height: 100px;
+text-align: left;
+border-left: 1px solid #FFFFFF;
+margin: 15px 0px 15px 0;
+box-sizing: border-box;
+}
+
+.report-title {
+font-weight: 700;
+font-style: italic;
+}
+
+.explain p {
+color: #ffffff;
+}
+
+h1, h2 {
+font-family: 'Roboto Slab', serif;
+}
+
+.cta {
+margin: 0 auto 0 auto;
+padding: 32px;
+text-align: center;
+font-size: 32px;
+max-width: 650px;
+color: #252629;
+}
+
+.content {
+width: 90%;
+margin: 10px auto 0px auto;
+display: block;
+padding: 0px 0px 24px 0px;
+}
+
+.content p {
+margin: 16px auto;
+}
+
+.content-img {
+margin: 16px;
+text-align: center;
+}
+
+ol, ul {
+margin: 0 0 0 32px;
+}
+
+.explain-small {
+display: none;
+font-size: 12px;
+transition: .225s;
+max-width: 300px;
+margin: 8px auto 0 auto;
+}
+
+.footer-distributed{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 24px 50px;
+margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+width: 40%;
+}
+
+.footer-left img {
+max-width: 100%;
+}
+
+/* The company logo */
+.footer-distributed img{
+color: #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+
+.footer-distributed h3 span{
+color: #5383d3;
+}
+
+/* Footer links */
+.footer-distributed .footer-links{
+color: #ffffff;
+margin: 20px 0 12px;
+padding: 0;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+color: #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{
+background-color: #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color: #5383d3;
+text-decoration: none;;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right{
+width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color: #92999f;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color: #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.privacy-policy {
+display: none;
+font-size: 12px;
+}
+
+.view-privacy-policy {
+cursor: pointer;
+border-bottom: 1px solid white;
+padding-bottom: 1px;
+}
+
+.form-container {
+margin: 8px auto;
+text-align: left;
+max-width: 400px;
+margin-bottom: 16px;
+}
+
+.flex-container {
+display: flex;
+position: relative;
+}
+
+.submit {
+display: block;
+margin: 0 auto;
+padding: 8px 16px;
+text-decoration: none;
+font-family: Arial, sans-serif;
+border-radius: 6px;
+font-size: 16px;
+max-width: 160px;
+transition: .125s;
+font-weight: bold;
+color: #000000;
+background: #62CD0D;
+box-shadow: 0 4px 4px 2px rgba(0,0,0,.4);
+cursor: pointer;
+position: relative;
+bottom: 2px;
+}
+
+.submit:hover {
+box-shadow: 0 4px 8px 2px rgba(0,0,0,.4) inset;
+color:#ffffff;
+background: #489708;
+}
+
+label.error, .email-notice {
+position: absolute;
+font-size: 16px;
+top: 42px;
+color: red;
+transition: .125s;
+}
+
+@media (max-width: 880px) {
+
+.footer-distributed{
+font: bold 14px sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+
+}
+
+@media only screen and (max-width: 980px) {
+
+.explain {
+padding-top: 2px;
+}
+
+.explain p {
+font-size: 14px;
+}
+
+#report-title {
+font-size: 32px;
+}
+
+.parallax {
+height: auto;
+}
+
+.header-container {
+min-height: 72px;
+}
+
+}
+
+@media only screen and (max-width: 895px) {
+
+.explain p {
+font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width: 895px) {
+
+.explain {
+display: none;
+}
+
+.branding {
+margin: 0 auto;
+width: 100%;
+}
+
+.explain-small {
+display: block;
+}
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<div class="parallax">
+
+
+<header>
+
+<div class="header-container">
+
+<div class="branding">
+
+<img src="https://images.angelpub.com/2017/17/43689/wealth-daily-logo-alt.png"/>
+
+</div>
+
+<div class="explain">
+
+<p>Simply sign up to receive our free <em>Wealth Daily</em> newsletter <br> and we'll immediately email you this new investor report:<br>
+
+<span class="report-title">Marijuana Outlook: Best Stocks to Buy</span></p>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<section>
+
+<div class="cta">
+
+<h1 align="center"style="font-size: 34px; padding-bottom: 16px; ">5 Legal Marijuana Stocks Primed to Profit</h1>
+
+<h3 align="center" style="font-size: 18px; color: #555; padding: 0 24px; padding-bottom: 16px; margin-top: 16px;"><b style= "color: #000">NEW REPORT:</b> "Marijuana Outlook: Best Stocks to Buy"</h3>
+
+<div class="form-container">
+
+<form action="/info" method="POST" name="emlsignup" id="emlsignup">
+
+<p style="margin-bottom: 0; padding-bottom: 0; font-size: 16px;">Your email address:</p>
+
+<INPUT type="hidden" name="effortid" value="<?php echo $_GET['effortid']; ?>">
+
+<div class="flex-container">
+
+<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; max-width: 240px; margin-right: 4px; height:40px; font-size:16px;">
+
+<input class="submit" name="submit" id="submit" type="submit" value="Send My Report" >
+
+</div>
+
+</form>
+
+</div>
+
+<p class="explain-small">Simply sign up to receive our free <em>Wealth Daily</em> newsletter and we'll immediately email you our new investor report.<br>
+
+</div>
+
+<div class="content">
+
+<img style="max-width: 180px; float: right; padding-left: 24px;" src="https://images.angelpub.com/2017/10/42690/marijuana-outlook_report.png" alt="special report" />
+
+<p>
+<b>
+<i>
+<?php echo date("F jS, Y"); ?>
+</i>
+</b>
+</p>
+
+
+<p>If you’re reading this then it’s likely you made money on Bitcoin.</p> 
+
+<p>Heck, if you are like many Americans participating in the digital currency boom, you may have money on multiple digital tokens.</p> 
+
+<p>Since the start of 2017, the digital currency market has been on an upward hurdle. Bitcoin, Ethereum and a handful of digital currencies have offered investors three-, four-. and even five- digit gains!</p>
+
+<p>Those gains were easy. Correctly reporting them is not...</p>
+
+<p>This tax season, many Americans will face the challenge of correctly reporting your digital currency gains to the Internal Revenue Service.</p> 
+
+<p>And if you are looking for resources to help you with that reporting process, look no further.</p> 
+
+<p>We have a FREE digital currency tax guide just for you.</p> 
+
+<p>Over the last couple of months, our dedicated <i>Wealth Daily</i> team has scoured the internet for the best and most up to date digital currency tax information. We have combined that information into a 3-page report that we call <i>“The Basics of Digital Currency Taxes.”</i></p>
+
+<p>With this report, you will get:</p> 
+
+<ol>
+<li>Information from the IRS about digital currencies</li>
+<li>Coinbase reporting information and guidelines</li>
+<li>Links for further resources and tools</li>
+</ol>
+
+<p>Taxes are a pain. In fact, we’ve never meet anyone who loves doing them. That is why we have decided to give this report away for FREE, and help make the process just a bit easier.</p> 
+
+<p>In addition to your FREE report, you will also receive a subscription to our free daily investment newsletter, <i>Wealth Daily.</i></p>
+
+<p>With tax season just around the corner, you can’t afford to wait. There is high demand for this online report and copies are limited.</p> 
+
+<p>Enter your email and click the "Send My Report" button below. Your report will immediately be sent to your inbox.</p>
+
+
+<div class="cta">
+
+<div class="form-container">
+
+<form action="/info" method="POST" name="emlsignup2" id="emlsignup2">
+
+<p style="margin-bottom: 0; padding-bottom: 0; font-size: 16px;">Your email address:</p>
+
+<INPUT type="hidden" name="effortid" value="<?php echo $_GET['effortid']; ?>">
+
+<div class="flex-container">
+
+<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; max-width: 240px; margin-right: 4px; height:40px; font-size:16px;">
+
+<input class="submit" name="submit" id="submit" type="submit" value="Send My Report" >
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+<div class="content">
+
+<div class="privacy-policy">
+
+<p>NO-SPAM PLEDGE: Under no circumstance will we EVER rent, sell or give away your email address for any reason. Unsubscribing from your Wealth Daily e-letter subscription is quick, easy, and painless... with just a few clicks. <a href="https://www.wealthdaily.com/privacy" target="_blank">View our Privacy Policy.</a></p>
+
+<p>The content on Wealth Daily is not personalized investment advice. Our employees strive to give smart, stimulating commentary, but are not licensed to address or give advice on individual investment situations. Nothing you receive from Wealth Daily should be considered personal investment advice. Any investments recommended by Wealth Daily should only be made after consulting with your investment advisor and only after reviewing the prospectus or financial statements of the company. All investments carry risk of significant loss.</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
