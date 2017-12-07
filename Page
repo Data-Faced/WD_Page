@@ -1,5 +1,6 @@
 <style>
 
+
 * {
 margin: 0;
 padding: 0;
@@ -44,11 +45,13 @@ background-color: #2b498d;
 text-align: center;
 max-width: 100%;
 max-height: 100px;
-background-image: linear-gradient(180deg,rgba(10,52,111,1.00) 0%,rgba(41,85,151,1.00) 100%);
+background-image: linear-gradient(180deg,rgba(77,125,40,1.00) 0%,rgba(46,80,18,1.00) 100%)
 }
 
 header img {
 max-width: 100%;
+padding: 4px 0px 0px 0px;
+
 }
 
 .header-container {
@@ -60,7 +63,6 @@ max-height: 100px;
 }
 
 .branding {
-display: inline-block;
 padding-left: 15px;
 padding-right: 15px;
 width: 50%;
@@ -70,11 +72,10 @@ box-sizing: border-box;
 }
 
 .explain {
-display: inline-block;
-white-space: nowrap;
+-webkit-appearance: none;
 min-height: 1px;
-padding-left: 15px;
-padding-right: 15px;
+padding-left: 12px;
+padding-right: 12px;
 width: 50%;
 max-height: 100px;
 text-align: left;
@@ -129,8 +130,9 @@ margin: 0 0 0 32px;
 display: none;
 font-size: 12px;
 transition: .225s;
-max-width: 300px;
+max-width: 420px;
 margin: 8px auto 0 auto;
+text-align: center;
 }
 
 .footer-distributed{
@@ -288,18 +290,27 @@ padding-bottom: 1px;
 .form-container {
 margin: 8px auto;
 text-align: left;
-max-width: 400px;
+max-width: 424px;
 margin-bottom: 16px;
 }
 
 .flex-container {
 display: flex;
+flex-wrap: wrap;
 position: relative;
 }
 
+input[type=email] {
+     max-width: 240px;
+     margin-right: 4px;
+}
+
 .submit {
+-webkit-appearance: none;
 display: block;
-margin: 0 auto;
+position: absolute;
+right: 0px;
+margin-bottom: 2px;
 padding: 8px 16px;
 text-decoration: none;
 font-family: Arial, sans-serif;
@@ -312,7 +323,6 @@ color: #000000;
 background: #62CD0D;
 box-shadow: 0 4px 4px 2px rgba(0,0,0,.4);
 cursor: pointer;
-position: relative;
 bottom: 2px;
 }
 
@@ -328,6 +338,33 @@ font-size: 16px;
 top: 42px;
 color: red;
 transition: .125s;
+}
+
+@media only screen and (max-width: 484px) {
+     .submit {
+    -webkit-appearance: none;
+    display: block;
+    position: relative;
+    margin: 8px auto 0 auto;
+    padding: 16px 32px;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    width: 100%;
+    min-width: 240px;
+    transition: .125s;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    background: #62CD0D;
+    box-shadow: 0 4px 4px 2px rgba(0,0,0,.4);
+    cursor: pointer;
+   }
+
+    input[type=email] {
+    max-width: 100%;
+    margin: 8px auto;
+}
+
 }
 
 @media (max-width: 880px) {
@@ -375,15 +412,9 @@ min-height: 72px;
 
 }
 
-@media only screen and (max-width: 895px) {
 
-.explain p {
-font-size: 12px;
-}
 
-}
-
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1024px) {
 
 .explain {
 display: none;
@@ -402,7 +433,6 @@ display: block;
 
 </style>
 
-
 </head>
 
 
@@ -417,15 +447,15 @@ display: block;
 
 <div class="branding">
 
-<img src="https://images.angelpub.com/2017/17/43689/wealth-daily-logo-alt.png"/>
+<img src="https://images.angelpub.com/2017/30/45609/outsider-club-logo-light-lp.png"/>
 
 </div>
 
 <div class="explain">
 
-<p>Simply sign up to receive our free <em>Wealth Daily</em> newsletter <br> and we'll immediately email you this new investor report:<br>
+<p>Simply sign up to receive our free <em>Outsider Club</em> newsletter <br> and we'll immediately email you this new investor report:<br>
 
-<span class="report-title">Marijuana Outlook: Best Stocks to Buy</span></p>
+<span class="report-title">The Cryptocurrency Investor</span></p>
 
 </div>
 
@@ -437,11 +467,12 @@ display: block;
 
 <section>
 
+<p class="explain-small">Simply sign up to receive our free <em>Outsider Club</em> newsletter and we'll immediately email you our new investor report.</p>
+
 <div class="cta">
 
-<h1 align="center"style="font-size: 34px; padding-bottom: 16px; ">5 Legal Marijuana Stocks Primed to Profit</h1>
-
-<h3 align="center" style="font-size: 18px; color: #555; padding: 0 24px; padding-bottom: 16px; margin-top: 16px;"><b style= "color: #000">NEW REPORT:</b> "Marijuana Outlook: Best Stocks to Buy"</h3>
+<h1 align="center" style="font-size: 32px; padding-bottom: 8px;">Beyond Bitcoin:<br>New Currencies Are Killing Cash</h1>
+<h2 align="center" style="font-size: 30px; padding-bottom: 8px;"><em>These Are the Top 6</em></h2>
 
 <div class="form-container">
 
@@ -453,7 +484,7 @@ display: block;
 
 <div class="flex-container">
 
-<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; max-width: 240px; margin-right: 4px; height:40px; font-size:16px;">
+<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; height:40px; font-size:16px;">
 
 <input class="submit" name="submit" id="submit" type="submit" value="Send My Report" >
 
@@ -463,13 +494,9 @@ display: block;
 
 </div>
 
-<p class="explain-small">Simply sign up to receive our free <em>Wealth Daily</em> newsletter and we'll immediately email you our new investor report.<br>
-
 </div>
 
 <div class="content">
-
-<img style="max-width: 180px; float: right; padding-left: 24px;" src="https://images.angelpub.com/2017/10/42690/marijuana-outlook_report.png" alt="special report" />
 
 <p>
 <b>
@@ -480,38 +507,43 @@ display: block;
 </p>
 
 
-<p>If you’re reading this then it’s likely you made money on Bitcoin.</p> 
+<p>Welcome to the biggest investment opportunity of the 21st century.</p> 
 
-<p>Heck, if you are like many Americans participating in the digital currency boom, you may have money on multiple digital tokens.</p> 
+<p>It’s not a stock, it’s cryptocurrency.</p> 
 
-<p>Since the start of 2017, the digital currency market has been on an upward hurdle. Bitcoin, Ethereum and a handful of digital currencies have offered investors three-, four-. and even five- digit gains!</p>
+<p>I’m talking about Bitcoin, Ethereum, and other "altcoins."</p>
 
-<p>Those gains were easy. Correctly reporting them is not...</p>
+<p>These new, digital currencies are skyrocketing in value and investors are catching on.</p> 
 
-<p>This tax season, many Americans will face the challenge of correctly reporting your digital currency gains to the Internal Revenue Service.</p> 
+<p>In less than a decade, Bitcoin has evolved from an almost worthless curiosity to a widely accepted currency that’s now worth <em>thousands of dollars.</em></p> 
 
-<p>And if you are looking for resources to help you with that reporting process, look no further.</p> 
+<p>Ethereum, the new kid on the block, has soared from <b>less than $1 in value to $400 in less than a year.</b></p>
 
-<p>We have a FREE digital currency tax guide just for you.</p> 
+<p>And that’s just the start.</p>
 
-<p>Over the last couple of months, our dedicated <i>Wealth Daily</i> team has scoured the internet for the best and most up to date digital currency tax information. We have combined that information into a 3-page report that we call <i>“The Basics of Digital Currency Taxes.”</i></p>
+<p>More cryptocurrencies are coming. And our new report, <b>"The Cryptocurrency Investor: How to Mint 21st Century Profits,"</b> tells you everything you need to know about buying, selling, and investing in them.</p>
 
-<p>With this report, you will get:</p> 
+<p>It details exactly how Bitcoin works, how Ethereum has improved the process, and all of the new currencies that are coming down the pike.</p>
 
-<ol>
-<li>Information from the IRS about digital currencies</li>
-<li>Coinbase reporting information and guidelines</li>
-<li>Links for further resources and tools</li>
-</ol>
+<p>Indeed, the world of cryptocurrencies is far bigger than Bitcoin. And our report covers every inch of it.</p>
 
-<p>Taxes are a pain. In fact, we’ve never meet anyone who loves doing them. That is why we have decided to give this report away for FREE, and help make the process just a bit easier.</p> 
+<p>Fiat currency is dead.</p> 
 
-<p>In addition to your FREE report, you will also receive a subscription to our free daily investment newsletter, <i>Wealth Daily.</i></p>
+<p>The days of coin and paper money are over.</p> 
 
-<p>With tax season just around the corner, you can’t afford to wait. There is high demand for this online report and copies are limited.</p> 
+<p>They’ve been replaced.</p>
 
-<p>Enter your email and click the "Send My Report" button below. Your report will immediately be sent to your inbox.</p>
+<p>This is the future.</p> 
 
+<p>Cryptocurrencies can achieve everything that normal paper dollars can and more. They can be broken up and sold off in pieces. They can be transferred digitally from one person to another with no third party.</p> 
+
+<p>Better still, they're not tied to any country or central banks, so they can’t be traced or devalued.</p> 
+
+<p>So, sign up for our free report and get a taste of this new phenomenon.</p>
+
+<p>New money is the future. Don’t get left behind.</p>
+
+</div>
 
 <div class="cta">
 
@@ -525,7 +557,7 @@ display: block;
 
 <div class="flex-container">
 
-<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; max-width: 240px; margin-right: 4px; height:40px; font-size:16px;">
+<input autofocus placeholder="Email Address" type="email" name="email" size="38" maxlength="100" class="required email" style="width: 100%; height:40px; font-size:16px;">
 
 <input class="submit" name="submit" id="submit" type="submit" value="Send My Report" >
 
@@ -542,9 +574,9 @@ display: block;
 
 <div class="privacy-policy">
 
-<p>NO-SPAM PLEDGE: Under no circumstance will we EVER rent, sell or give away your email address for any reason. Unsubscribing from your Wealth Daily e-letter subscription is quick, easy, and painless... with just a few clicks. <a href="https://www.wealthdaily.com/privacy" target="_blank">View our Privacy Policy.</a></p>
+<p>NO-SPAM PLEDGE: Under no circumstance will we EVER rent, sell or give away your email address for any reason. Unsubscribing from your Outsider Club e-letter subscription is quick, easy, and painless... with just a few clicks. <a href="https://www.outsiderclub.com/privacy" target="_blank">View our Privacy Policy.</a></p>
 
-<p>The content on Wealth Daily is not personalized investment advice. Our employees strive to give smart, stimulating commentary, but are not licensed to address or give advice on individual investment situations. Nothing you receive from Wealth Daily should be considered personal investment advice. Any investments recommended by Wealth Daily should only be made after consulting with your investment advisor and only after reviewing the prospectus or financial statements of the company. All investments carry risk of significant loss.</p>
+<p>The content on Outsider Club is not personalized investment advice. Our employees strive to give smart, stimulating commentary, but are not licensed to address or give advice on individual investment situations. Nothing you receive from Outsider Club should be considered personal investment advice. Any investments recommended by Outsider Club should only be made after consulting with your investment advisor and only after reviewing the prospectus or financial statements of the company. All investments carry risk of significant loss.</p>
 
 </div>
 
